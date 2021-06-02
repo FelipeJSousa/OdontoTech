@@ -81,7 +81,9 @@
     <Reference Include="Microsoft.Extensions.Primitives, Version=3.1.15.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Primitives.3.1.15\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
@@ -120,16 +122,79 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Criar Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Criar Cliente.designer.cs">
+      <DependentUpon>Criar Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Criar Fornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criar Fornecedor.designer.cs">
+      <DependentUpon>Criar Fornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Criar Funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criar Funcionario.designer.cs">
+      <DependentUpon>Criar Funcionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Criar Ordem de Serviço.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criar Ordem de Serviço.designer.cs">
+      <DependentUpon>Criar Ordem de Serviço.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Criar Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criar Usuario.designer.cs">
+      <DependentUpon>Criar Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listagem.Designer.cs">
+      <DependentUpon>Listagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Criar Cliente.resx">
+      <DependentUpon>Criar Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criar Fornecedor.resx">
+      <DependentUpon>Criar Fornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criar Funcionario.resx">
+      <DependentUpon>Criar Funcionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criar Ordem de Serviço.resx">
+      <DependentUpon>Criar Ordem de Serviço.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criar Usuario.resx">
+      <DependentUpon>Criar Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listagem.resx">
+      <DependentUpon>Listagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
