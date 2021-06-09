@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="0b12ad4ff8c1477bb95552a93f2e2a1a" Name="Diagram1">
+      <Diagram DiagramId="1d3e6c4e60914677a80b38a38318488e" Name="Diagram1">
         <EntityTypeShape EntityType="odontotechModel.Clientes" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
         <EntityTypeShape EntityType="odontotechModel.Controle_Financeiros" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="odontotechModel.Fornecedor" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />

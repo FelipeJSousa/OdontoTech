@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Repositorio
 {
-    class OrdemServicoRepositorio : GenEntityRepo<OrdemServicoRepositorio>
+    public class OrdemServicoRepositorio : GenEntityRepo<Ordem_Servico>
     {
     }
 }

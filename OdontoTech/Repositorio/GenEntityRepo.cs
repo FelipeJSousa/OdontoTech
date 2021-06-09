@@ -10,7 +10,7 @@ namespace Repositorio
 {
     public class GenEntityRepo<T>: IDisposable, IGenEntityRepo<T> where T : class
     {
-        private odontotechEntities _context;
+        protected odontotechEntities _context;
 
         public T get(int id)
         {
@@ -29,7 +29,7 @@ namespace Repositorio
 
         }
 
-        public void add(T item)
+        public bool add(T item)
         {
             try
             {
@@ -37,12 +37,13 @@ namespace Repositorio
                 {
                     _context.Set<T>().Add(item);
                     _context.SaveChanges();
+                    return true;
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"{ex.Message}","Error to add item");
-                throw;
+                return false;
             }
         }
 

@@ -30,7 +30,7 @@ namespace OdontoTech
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txtnome = new System.Windows.Forms.TextBox();
+            this.txtuser = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtsenha = new System.Windows.Forms.TextBox();
@@ -48,12 +48,12 @@ namespace OdontoTech
             this.label1.TabIndex = 0;
             this.label1.Text = "Login";
             // 
-            // txtnome
+            // txtuser
             // 
-            this.txtnome.Location = new System.Drawing.Point(122, 153);
-            this.txtnome.Name = "txtnome";
-            this.txtnome.Size = new System.Drawing.Size(315, 20);
-            this.txtnome.TabIndex = 1;
+            this.txtuser.Location = new System.Drawing.Point(122, 153);
+            this.txtuser.Name = "txtuser";
+            this.txtuser.Size = new System.Drawing.Size(315, 20);
+            this.txtuser.TabIndex = 1;
             // 
             // label2
             // 
@@ -61,9 +61,9 @@ namespace OdontoTech
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(118, 130);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 20);
+            this.label2.Size = new System.Drawing.Size(77, 20);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Nome:";
+            this.label2.Text = "Usuario: ";
             // 
             // label3
             // 
@@ -95,6 +95,7 @@ namespace OdontoTech
             this.btnlogar.TabIndex = 5;
             this.btnlogar.Text = "Logar";
             this.btnlogar.UseVisualStyleBackColor = false;
+            this.btnlogar.Click += new System.EventHandler(this.btnlogar_Click);
             // 
             // label4
             // 
@@ -105,7 +106,7 @@ namespace OdontoTech
             this.label4.TabIndex = 6;
             this.label4.Text = "Caso tenha algum problema no login, informe a algum administrador sobre o caso.";
             // 
-            // Form1
+            // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -115,10 +116,11 @@ namespace OdontoTech
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtsenha);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtnome);
+            this.Controls.Add(this.txtuser);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Name = "Form1";
+            this.Name = "login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login - OdontoTech";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -128,7 +130,7 @@ namespace OdontoTech
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtnome;
+        private System.Windows.Forms.TextBox txtuser;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtsenha;

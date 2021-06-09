@@ -10,7 +10,7 @@ namespace Repositorio
     {
         T get(int id);
         List<T> getAll();
-        void add(T item);
+        bool add(T item);
         void delete(T item);
         void edit(T item);
     }
