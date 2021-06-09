@@ -14,7 +14,7 @@ namespace Repositorio
     
     public partial class Usuario
     {
-        public int Usu_codigos { get; set; }
+        public int? Usu_codigos { get; set; }
         public string usu_nome { get; set; }
         public string usu_senha { get; set; }
     }

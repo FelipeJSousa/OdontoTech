@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace OdontoTech
 {
-    public partial class Criar_Ordem_de_Serviço : Form
+    public partial class FrmGlobal : Form
     {
-        public Criar_Ordem_de_Serviço()
+        public static string usuario = "";
+        public FrmGlobal()
         {
             InitializeComponent();
         }

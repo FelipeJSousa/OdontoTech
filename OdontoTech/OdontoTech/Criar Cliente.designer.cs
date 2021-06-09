@@ -30,23 +30,23 @@ namespace OdontoTech
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtcpf = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtnome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtcnpj = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txttelefone = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtcidade = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtestado = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtcep = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtendereco = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtnumero = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.btncriar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -61,12 +61,12 @@ namespace OdontoTech
             this.label1.TabIndex = 4;
             this.label1.Text = "Criar Cliente";
             // 
-            // textBox2
+            // txtcpf
             // 
-            this.textBox2.Location = new System.Drawing.Point(281, 104);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(252, 20);
-            this.textBox2.TabIndex = 9;
+            this.txtcpf.Location = new System.Drawing.Point(281, 104);
+            this.txtcpf.Name = "txtcpf";
+            this.txtcpf.Size = new System.Drawing.Size(252, 20);
+            this.txtcpf.TabIndex = 9;
             // 
             // label3
             // 
@@ -78,12 +78,12 @@ namespace OdontoTech
             this.label3.TabIndex = 8;
             this.label3.Text = "CPF do Cliente";
             // 
-            // textBox1
+            // txtnome
             // 
-            this.textBox1.Location = new System.Drawing.Point(84, 169);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(252, 20);
-            this.textBox1.TabIndex = 11;
+            this.txtnome.Location = new System.Drawing.Point(84, 169);
+            this.txtnome.Name = "txtnome";
+            this.txtnome.Size = new System.Drawing.Size(252, 20);
+            this.txtnome.TabIndex = 11;
             // 
             // label2
             // 
@@ -95,12 +95,12 @@ namespace OdontoTech
             this.label2.TabIndex = 10;
             this.label2.Text = "Nome:";
             // 
-            // textBox3
+            // txtcnpj
             // 
-            this.textBox3.Location = new System.Drawing.Point(84, 217);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(252, 20);
-            this.textBox3.TabIndex = 13;
+            this.txtcnpj.Location = new System.Drawing.Point(84, 217);
+            this.txtcnpj.Name = "txtcnpj";
+            this.txtcnpj.Size = new System.Drawing.Size(252, 20);
+            this.txtcnpj.TabIndex = 13;
             // 
             // label4
             // 
@@ -112,12 +112,12 @@ namespace OdontoTech
             this.label4.TabIndex = 12;
             this.label4.Text = "CNPJ:";
             // 
-            // textBox4
+            // txttelefone
             // 
-            this.textBox4.Location = new System.Drawing.Point(84, 265);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(252, 20);
-            this.textBox4.TabIndex = 15;
+            this.txttelefone.Location = new System.Drawing.Point(84, 265);
+            this.txttelefone.Name = "txttelefone";
+            this.txttelefone.Size = new System.Drawing.Size(252, 20);
+            this.txttelefone.TabIndex = 15;
             // 
             // label5
             // 
@@ -129,12 +129,12 @@ namespace OdontoTech
             this.label5.TabIndex = 14;
             this.label5.Text = "Telefone para Contato:";
             // 
-            // textBox5
+            // txtcidade
             // 
-            this.textBox5.Location = new System.Drawing.Point(418, 265);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(252, 20);
-            this.textBox5.TabIndex = 21;
+            this.txtcidade.Location = new System.Drawing.Point(418, 265);
+            this.txtcidade.Name = "txtcidade";
+            this.txtcidade.Size = new System.Drawing.Size(252, 20);
+            this.txtcidade.TabIndex = 21;
             // 
             // label6
             // 
@@ -146,12 +146,12 @@ namespace OdontoTech
             this.label6.TabIndex = 20;
             this.label6.Text = "Cidade:";
             // 
-            // textBox6
+            // txtestado
             // 
-            this.textBox6.Location = new System.Drawing.Point(418, 217);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(252, 20);
-            this.textBox6.TabIndex = 19;
+            this.txtestado.Location = new System.Drawing.Point(418, 217);
+            this.txtestado.Name = "txtestado";
+            this.txtestado.Size = new System.Drawing.Size(252, 20);
+            this.txtestado.TabIndex = 19;
             // 
             // label7
             // 
@@ -163,12 +163,12 @@ namespace OdontoTech
             this.label7.TabIndex = 18;
             this.label7.Text = "Estado:";
             // 
-            // textBox7
+            // txtcep
             // 
-            this.textBox7.Location = new System.Drawing.Point(418, 169);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(252, 20);
-            this.textBox7.TabIndex = 17;
+            this.txtcep.Location = new System.Drawing.Point(418, 169);
+            this.txtcep.Name = "txtcep";
+            this.txtcep.Size = new System.Drawing.Size(252, 20);
+            this.txtcep.TabIndex = 17;
             // 
             // label8
             // 
@@ -180,12 +180,12 @@ namespace OdontoTech
             this.label8.TabIndex = 16;
             this.label8.Text = "CEP:";
             // 
-            // textBox8
+            // txtendereco
             // 
-            this.textBox8.Location = new System.Drawing.Point(418, 313);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(252, 20);
-            this.textBox8.TabIndex = 23;
+            this.txtendereco.Location = new System.Drawing.Point(418, 313);
+            this.txtendereco.Name = "txtendereco";
+            this.txtendereco.Size = new System.Drawing.Size(252, 20);
+            this.txtendereco.TabIndex = 23;
             // 
             // label9
             // 
@@ -197,12 +197,12 @@ namespace OdontoTech
             this.label9.TabIndex = 22;
             this.label9.Text = "Endereço:";
             // 
-            // textBox9
+            // txtnumero
             // 
-            this.textBox9.Location = new System.Drawing.Point(680, 313);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(74, 20);
-            this.textBox9.TabIndex = 25;
+            this.txtnumero.Location = new System.Drawing.Point(680, 313);
+            this.txtnumero.Name = "txtnumero";
+            this.txtnumero.Size = new System.Drawing.Size(74, 20);
+            this.txtnumero.TabIndex = 25;
             // 
             // label10
             // 
@@ -226,6 +226,7 @@ namespace OdontoTech
             this.btncriar.TabIndex = 26;
             this.btncriar.Text = "Criar";
             this.btncriar.UseVisualStyleBackColor = false;
+            this.btncriar.Click += new System.EventHandler(this.btncriar_Click);
             // 
             // Criar_Cliente
             // 
@@ -233,26 +234,27 @@ namespace OdontoTech
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btncriar);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txtnumero);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txtendereco);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtcidade);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtestado);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtcep);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txttelefone);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtcnpj);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtnome);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtcpf);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "Criar_Cliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Criar Cliente";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -262,23 +264,23 @@ namespace OdontoTech
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtcpf;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtnome;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtcnpj;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txttelefone;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtcidade;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtestado;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtcep;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtendereco;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtnumero;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btncriar;
     }

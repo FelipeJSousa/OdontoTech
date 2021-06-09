@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OdontoTech
 {
-    public partial class Form1 : Form
+    public partial class Controle : Form
     {
-        public Form1()
+        public Controle()
         {
             InitializeComponent();
         }
