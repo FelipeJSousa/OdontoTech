@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'F:\Ylksz\Documentos\SI\2021 - 01\Gestão de Projetos\OdontoTech\OdontoTech\Repositorio\Model1.edmx'. 
+﻿// T4 code generation is enabled for model 'E:\Projetos Visual Studio\OdontoTech\OdontoTech\OdontoTech\Repositorio\Model1.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

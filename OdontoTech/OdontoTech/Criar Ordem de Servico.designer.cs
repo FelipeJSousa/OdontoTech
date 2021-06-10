@@ -209,6 +209,7 @@ namespace OdontoTech
             this.txtcpf.Name = "txtcpf";
             this.txtcpf.Size = new System.Drawing.Size(166, 20);
             this.txtcpf.TabIndex = 19;
+            this.txtcpf.TextChanged += new System.EventHandler(this.txtcpf_TextChanged);
             this.txtcpf.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtcpf_KeyUp);
             this.txtcpf.Leave += new System.EventHandler(this.txtcpf_Leave);
             // 

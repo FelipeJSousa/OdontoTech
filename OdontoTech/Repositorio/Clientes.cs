@@ -29,7 +29,7 @@ namespace Repositorio
         public string cli_endereco { get; set; }
         public string cli_numerorua { get; set; }
         public string cli_cidade { get; set; }
-        public string cli_estado { get; set; }
+        public string cli_bairro { get; set; }
         public string cli_cep { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

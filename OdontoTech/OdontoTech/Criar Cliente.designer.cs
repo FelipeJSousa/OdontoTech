@@ -38,9 +38,9 @@ namespace OdontoTech
             this.label4 = new System.Windows.Forms.Label();
             this.txttelefone = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtcidade = new System.Windows.Forms.TextBox();
+            this.txtbairro = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtestado = new System.Windows.Forms.TextBox();
+            this.txtcidade = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtcep = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -129,12 +129,12 @@ namespace OdontoTech
             this.label5.TabIndex = 14;
             this.label5.Text = "Telefone para Contato:";
             // 
-            // txtcidade
+            // txtbairro
             // 
-            this.txtcidade.Location = new System.Drawing.Point(418, 265);
-            this.txtcidade.Name = "txtcidade";
-            this.txtcidade.Size = new System.Drawing.Size(252, 20);
-            this.txtcidade.TabIndex = 21;
+            this.txtbairro.Location = new System.Drawing.Point(418, 265);
+            this.txtbairro.Name = "txtbairro";
+            this.txtbairro.Size = new System.Drawing.Size(252, 20);
+            this.txtbairro.TabIndex = 21;
             // 
             // label6
             // 
@@ -142,16 +142,16 @@ namespace OdontoTech
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.label6.Location = new System.Drawing.Point(414, 240);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 22);
+            this.label6.Size = new System.Drawing.Size(63, 22);
             this.label6.TabIndex = 20;
-            this.label6.Text = "Cidade:";
+            this.label6.Text = "Bairro:";
             // 
-            // txtestado
+            // txtcidade
             // 
-            this.txtestado.Location = new System.Drawing.Point(418, 217);
-            this.txtestado.Name = "txtestado";
-            this.txtestado.Size = new System.Drawing.Size(252, 20);
-            this.txtestado.TabIndex = 19;
+            this.txtcidade.Location = new System.Drawing.Point(418, 217);
+            this.txtcidade.Name = "txtcidade";
+            this.txtcidade.Size = new System.Drawing.Size(252, 20);
+            this.txtcidade.TabIndex = 19;
             // 
             // label7
             // 
@@ -159,9 +159,9 @@ namespace OdontoTech
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.label7.Location = new System.Drawing.Point(414, 192);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 22);
+            this.label7.Size = new System.Drawing.Size(72, 22);
             this.label7.TabIndex = 18;
-            this.label7.Text = "Estado:";
+            this.label7.Text = "Cidade:";
             // 
             // txtcep
             // 
@@ -169,6 +169,7 @@ namespace OdontoTech
             this.txtcep.Name = "txtcep";
             this.txtcep.Size = new System.Drawing.Size(252, 20);
             this.txtcep.TabIndex = 17;
+            this.txtcep.TextChanged += new System.EventHandler(this.txtcep_TextChanged);
             // 
             // label8
             // 
@@ -238,9 +239,9 @@ namespace OdontoTech
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtendereco);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtcidade);
+            this.Controls.Add(this.txtbairro);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtestado);
+            this.Controls.Add(this.txtcidade);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtcep);
             this.Controls.Add(this.label8);
@@ -272,9 +273,9 @@ namespace OdontoTech
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txttelefone;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtcidade;
+        private System.Windows.Forms.TextBox txtbairro;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtestado;
+        private System.Windows.Forms.TextBox txtcidade;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtcep;
         private System.Windows.Forms.Label label8;

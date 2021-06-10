@@ -21,5 +21,9 @@ namespace Repositorio
         public string for_endereco { get; set; }
         public string for_email { get; set; }
         public string for_telefone { get; set; }
+        public string for_cep { get; set; }
+        public string for_bairro { get; set; }
+        public string for_cidade { get; set; }
+        public string for_numero { get; set; }
     }
 }
