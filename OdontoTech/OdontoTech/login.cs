@@ -24,7 +24,7 @@ namespace OdontoTech
             if (!String.IsNullOrEmpty(txtuser.Text) && !String.IsNullOrEmpty(txtsenha.Text))
             {
                 Usuario user = new UsuarioRepositorio().validarLogin(txtuser.Text, txtsenha.Text);
-                if (user.Usu_codigos != null)
+                if (user != null)
                 {
                     FrmGlobal.usuario = user.usu_nome;
                     txtuser.Text = "";
@@ -43,6 +43,14 @@ namespace OdontoTech
             else
             {
                 MessageBox.Show("Usuário/senha inválidos!");
+            }
+        }
+
+        private void txtsenha_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)Keys.Enter)
+            {
+                btnlogar_Click(null, null);
             }
         }
     }

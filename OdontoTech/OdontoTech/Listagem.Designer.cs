@@ -29,20 +29,22 @@ namespace OdontoTech
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbLista = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dglistagem = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dglistagem)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cbLista
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(228, 89);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(359, 21);
-            this.comboBox1.TabIndex = 0;
+            this.cbLista.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbLista.FormattingEnabled = true;
+            this.cbLista.Location = new System.Drawing.Point(228, 89);
+            this.cbLista.Name = "cbLista";
+            this.cbLista.Size = new System.Drawing.Size(359, 21);
+            this.cbLista.TabIndex = 0;
+            this.cbLista.SelectedIndexChanged += new System.EventHandler(this.cbLista_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -64,28 +66,29 @@ namespace OdontoTech
             this.label2.TabIndex = 5;
             this.label2.Text = "Lista:";
             // 
-            // dataGridView1
+            // dglistagem
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 134);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(800, 316);
-            this.dataGridView1.TabIndex = 6;
+            this.dglistagem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dglistagem.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dglistagem.Location = new System.Drawing.Point(0, 134);
+            this.dglistagem.Name = "dglistagem";
+            this.dglistagem.Size = new System.Drawing.Size(800, 316);
+            this.dglistagem.TabIndex = 6;
             // 
             // Listagem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dglistagem);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbLista);
             this.Name = "Listagem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listagem";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Listagem_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dglistagem)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,9 +96,9 @@ namespace OdontoTech
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbLista;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dglistagem;
     }
 }

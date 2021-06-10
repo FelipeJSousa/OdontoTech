@@ -157,7 +157,7 @@ namespace OdontoTech
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 506);
+            this.ClientSize = new System.Drawing.Size(785, 506);
             this.Controls.Add(this.sessionUsuario);
             this.Controls.Add(this.btnlistagem);
             this.Controls.Add(this.btncriarcliente);

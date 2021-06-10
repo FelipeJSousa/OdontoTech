@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Http;
+using Newtonsoft.Json;
+using System.Net.Http.Headers;
 
 namespace OdontoTech
 {
@@ -29,10 +32,11 @@ namespace OdontoTech
                 fun.fun_email = txtemail.Text;
                 fun.fun_cargo = txtcargo.Text;
                 fun.fun_salario = decimal.Parse(txtsalario.Text);
-                fun.fun_estado = txtestado.Text;
+                fun.fun_cep = txtcep.Text;
                 fun.fun_cidade = txtcidade.Text;
+                fun.fun_bairro = txtbairro.Text;
                 fun.fun_endereco = txtendereco.Text;
-                //fun.fun_numero = txtnumero.Text;
+                fun.fun_numero = txtnumero.Text;
 
                 if (new FuncionariosRepositorio().add(fun))
                 {
@@ -47,8 +51,8 @@ namespace OdontoTech
                         txtemail.Text = "";
                         txtcargo.Text = "";
                         txtsalario.Text = "";
-                        txtestado.Text = "";
                         txtcidade.Text = "";
+                        txtbairro.Text = "";
                         txttelefone.Text = "";
                         txtendereco.Text = "";
                         txtnumero.Text = "";
@@ -63,9 +67,64 @@ namespace OdontoTech
                     MessageBox.Show("Não foi possível criar o Funcionario.");
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Não foi possível criar o Funcionario.");
+            }
+        }
+        private class Enderecos
+        {
+            public string cep { get; set; }
+            public string logradouro { get; set; }
+            public string complemento { get; set; }
+            public string bairro { get; set; }
+            public string localidade { get; set; }
+            public string uf { get; set; }
+            public string ibge { get; set; }
+            public string gia { get; set; }
+            public string ddd { get; set; }
+            public string siafi { get; set; }
+            public string erro { get; set; }
+        }
+
+
+
+        private void txtcep_TextChanged(object sender, EventArgs e)
+        {
+            if (txtcep.TextLength == 8)
+            {
+                getcep();
+            }
+        }
+
+        private async void getcep()
+        {
+            var URI = "https://viacep.com.br/ws/" + txtcep.Text + "/json/";
+            using (var client = new HttpClient())
+            {
+                using (var response = await client.GetAsync(URI))
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var endereco = await response.Content.ReadAsStringAsync();
+                        Enderecos json = JsonConvert.DeserializeObject<Enderecos>(endereco);
+
+                        if (json.erro == "True")
+                        {
+                            MessageBox.Show("CEP Inexistente");
+                        }
+                        else
+                        {
+                            txtcidade.Text = json.localidade;
+                            txtbairro.Text = json.bairro;
+                            txtendereco.Text = json.logradouro;
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ocoreu um erro inexperado");
+                    }
+                }
             }
         }
     }

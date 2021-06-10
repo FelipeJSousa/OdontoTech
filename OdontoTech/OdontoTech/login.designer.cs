@@ -81,6 +81,7 @@ namespace OdontoTech
             this.txtsenha.Name = "txtsenha";
             this.txtsenha.Size = new System.Drawing.Size(315, 20);
             this.txtsenha.TabIndex = 3;
+            this.txtsenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtsenha_KeyPress);
             // 
             // btnlogar
             // 

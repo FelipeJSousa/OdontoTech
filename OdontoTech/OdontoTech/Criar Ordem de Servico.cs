@@ -71,7 +71,7 @@ namespace OdontoTech
                     MessageBox.Show("Cliente não encontrado, se necessário crie um novo cliente.");
                 }
             }
-            catch(Exception ex)
+            catch(Exception)
             {
 
             }
@@ -83,9 +83,17 @@ namespace OdontoTech
             {
                 Clientes cli = new Clientes();
                 cli = new ClientesRepositorio().get(txtcpf.Text);
-                txtnomecliente.Text = cli.cli_nome;
+
+                if (cli != null)
+                {
+                    txtnomecliente.Text = cli.cli_nome;
+                }
+                else
+                {
+                    MessageBox.Show("Cliente não encontrado, se necessário crie um novo cliente.");
+                }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 txtnomecliente.Text = "";
                 MessageBox.Show("Cliente não encontrado, se necessário crie um novo cliente.");
@@ -94,15 +102,23 @@ namespace OdontoTech
 
         private void txtcpf_KeyUp(object sender, KeyEventArgs e)
         {
-            if (txtcpf.Text.Length>9)
+            if (txtcpf.Text.Length>10)
             {
                 try
                 {
                     Clientes cli = new Clientes();
                     cli = new ClientesRepositorio().get(txtcpf.Text);
-                    txtnomecliente.Text = cli.cli_nome;
+
+                    if (cli != null)
+                    {
+                        txtnomecliente.Text = cli.cli_nome;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cliente não encontrado, se necessário crie um novo cliente.");
+                    }
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     txtnomecliente.Text = "";
                     MessageBox.Show("Cliente não encontrado, se necessário crie um novo cliente.");
@@ -117,6 +133,11 @@ namespace OdontoTech
             Frm.ShowDialog();
             Frm.Dispose();
             this.Show();
+        }
+
+        private void txtcpf_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

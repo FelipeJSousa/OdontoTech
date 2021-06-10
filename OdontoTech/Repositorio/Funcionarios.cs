@@ -20,9 +20,11 @@ namespace Repositorio
         public string fun_cpf { get; set; }
         public string fun_endereco { get; set; }
         public string fun_cidade { get; set; }
-        public string fun_estado { get; set; }
+        public string fun_bairro { get; set; }
         public string fun_email { get; set; }
         public string fun_cargo { get; set; }
         public Nullable<decimal> fun_salario { get; set; }
+        public string fun_cep { get; set; }
+        public string fun_numero { get; set; }
     }
 }
